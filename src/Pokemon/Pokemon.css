@@ -1,0 +1,41 @@
+/* Styling for the Pokemon component */
+.pokemon-container {
+    width: 230px;
+    height: 270px;
+    background: linear-gradient(145deg, #ffffff, #d4e9ff);
+    border-radius: 10px;
+    margin-top: 30px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+  
+  .pokemon-container:hover {
+    transform: translateY(-10px);
+    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.9);
+  }
+  
+  .pokemon-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    letter-spacing: 0.2rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .pokemon-image img {
+    width: 180px;
+    height: 210px;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
+  .pokemon-id {
+    font-size: 1.2em;
+    color: #888;
+    margin-top: 5px;
+  }
