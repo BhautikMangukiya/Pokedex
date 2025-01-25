@@ -1,41 +1,86 @@
 /* Styling for the Pokemon component */
 .pokemon-container {
-    width: 230px;
-    height: 270px;
-    background: linear-gradient(145deg, #ffffff, #d4e9ff);
-    border-radius: 10px;
-    margin-top: 30px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-    margin-right: 10px;
-    margin-left: 10px;
+  width: 230px;
+  height: 270px;
+  background: linear-gradient(145deg, #ffffff, #d4e9ff);
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.pokemon-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.9);
+}
+
+.pokemon-name {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  letter-spacing: 0.2rem;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.pokemon-image img {
+  width: 180px;
+  height: 210px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.pokemon-id {
+  font-size: 1.2em;
+  color: #888;
+  margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .pokemon-container {
+      width: 200px; /* Adjust width for tablets */
+      height: 250px;
+      padding: 12px;
   }
-  
-  .pokemon-container:hover {
-    transform: translateY(-10px);
-    box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.2), -8px -8px 20px rgba(255, 255, 255, 0.9);
-  }
-  
+
   .pokemon-name {
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 10px;
-    letter-spacing: 0.2rem;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 1.1em; /* Slightly smaller font for mobile devices */
+      letter-spacing: 0.15rem;
   }
-  
+
   .pokemon-image img {
-    width: 180px;
-    height: 210px;
-    border-radius: 5px;
-    margin-top: 20px;
+      width: 160px; /* Smaller image on smaller screens */
+      height: 190px;
   }
-  
+
   .pokemon-id {
-    font-size: 1.2em;
-    color: #888;
-    margin-top: 5px;
+      font-size: 1.1em;
   }
+}
+
+@media (max-width: 480px) {
+  .pokemon-container {
+      width: 160px; /* Compact size for mobile devices */
+      height: 210px;
+      padding: 10px;
+  }
+
+  .pokemon-name {
+      font-size: 1em; /* Further reduce font size */
+      letter-spacing: 0.1rem;
+  }
+
+  .pokemon-image img {
+      width: 140px; /* Even smaller image for mobile */
+      height: 170px;
+  }
+
+  .pokemon-id {
+      font-size: 1em;
+  }
+}
